@@ -1,0 +1,53 @@
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+.form-style {
+    font: 95% Arial, Helvetica, sans-serif;
+	background: #F7F7F7;
+}
+
+.form-style form {
+
+  text-align: center;
+
+}
+
+.form-style input[type=text] {
+    margin: 2px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+    width: 10%;
+    height: 2em;
+
+}
+.form-style input[type=radio] {
+    display:none;
+    margin:10px;
+
+
+}
+
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+.form-style input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 20px 20px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+    width: 10%;
+    height: 2em;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+.form-style input[type=radio]:checked + label {
+   background-image: none;
+    background-color:#d0d0d0;
+
+}
