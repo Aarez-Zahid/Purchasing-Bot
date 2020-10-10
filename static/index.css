@@ -1,11 +1,38 @@
+* {
+margin: 0;
+padding: 0;
+}
+form-style {
+display: flex;
+flex-direction: column;
+justify-content: center;
 
-/*
-  Hide radio button (the round disc)
-  we will use just the label to create pushbutton effect
-*/
+}
+
+ .webb{
+    background-color: yellow;
+    
+}
+
+
+body {
+background-color: #181818;
+}
+
+h1 {
+    text-align: center;
+    background-color: #252627;
+    padding: 20px ;
+    margin-bottom: 30px;
+
+
+
+}
+
 .form-style {
-    font: 95% Arial, Helvetica, sans-serif;
-	background: #F7F7F7;
+    font: 95% Segoe UI,Arial,sans-serif;;
+
+
 }
 
 .form-style form {
@@ -29,18 +56,28 @@
 
 }
 
-/*
-  Change the look'n'feel of labels (which are adjacent to radiobuttons).
-  Add some margin, padding to label
-*/
+
 .form-style input[type=radio] + label {
+    border-radius: 10px;
     display:inline-block;
-    margin:-2px;
+    margin: 3px;
+    padding: 10px 10px;
+    background-color: grey;
+    border-color: #ddd;
+    width: 5%;
+    height: 2em;
+}
+
+.site-bar input[type=radio] + label {
+    border-radius: 10px;
+    display:inline-block;
+    margin: 2px;
     padding: 20px 20px;
-    background-color: #e7e7e7;
+    background-color: grey;
     border-color: #ddd;
     width: 10%;
     height: 2em;
+
 }
 /*
  Change background color for label next to checked radio button
@@ -48,6 +85,14 @@
 */
 .form-style input[type=radio]:checked + label {
    background-image: none;
-    background-color:#d0d0d0;
+    background-color:#1DB954;
+    color: white
+
+}
+
+.form-style input[type=radio]:hover + label {
+   border: 1px solid white;
+   background-color:#1DB954;
+   color: white
 
 }
